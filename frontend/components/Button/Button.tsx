@@ -2,9 +2,9 @@ import React from "react";
 
 export type ButtonSize = "small" | "medium" | "full";
 
-export type ButtonVariant = "primary" | "light" | "dark";
+export type ButtonVariant = "primary" | "secondary";
 
-export type ButtonState = "default" | "hover" | "disabled" | "loading";
+export type ButtonState = "default" | "disabled" | "loading";
 
 export type ButtonIconType = "lead" | "tail" | "none";
 
@@ -29,7 +29,11 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <button className={`button ${size} ${variant} ${state}`} {...props}>
+    <button
+      className={`button ${size} ${variant} ${state}`}
+      {...props}
+      //   disabled
+    >
       {iconType === "lead" && icon}
       {children}
       {iconType === "tail" && icon}
