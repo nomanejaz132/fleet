@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
+    <div style={{ minHeight: "100vh", backgroundColor: "#141416" }}>
       <Button
         size="medium"
         variant="secondary"
@@ -19,6 +19,6 @@ export default function Home() {
       >
         Button
       </Button>
-    </>
+    </div>
   );
 }
