@@ -4,12 +4,14 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { Button } from "../components/Button/Button";
 import Icon from "../components/Icon/Icon";
+import ArrowLeft from "../components/Icon/ArrowLeft";
+import ArrowRight from "../components/Icon/ArrowRight";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div style={{ minHeight: "100vh", backgroundColor: "#141416" }}>
+    <>
       <Button
         size="medium"
         variant="secondary"
@@ -19,6 +21,9 @@ export default function Home() {
       >
         Button
       </Button>
-    </div>
+      <br />
+      <ArrowLeft />
+      <ArrowRight />
+    </>
   );
 }
