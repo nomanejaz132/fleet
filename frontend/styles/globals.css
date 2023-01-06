@@ -33,12 +33,8 @@
 /* Checkbox Custom Icon */
 
 input:checked + div {
-  @apply border-blue-500;
+  @apply bg-[#3b71fe] rounded;
 }
 input:checked + div svg {
   @apply block;
 }
-
-/* [type="checkbox"]:checked {
-  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 12L10 16L18 8" stroke="#FCFCFD" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-} */
