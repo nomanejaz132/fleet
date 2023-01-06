@@ -29,3 +29,16 @@
 .secondary {
   @apply text-[#23262F] dark:text-[#777E90] hover:text-[#FCFCFD] dark:hover:text-[#23262F] disabled:text-[#D7D9E0] dark:disabled:text-[#6A6D79] text-sm text-center font-bold bg-transparent border-2 border-[#E6E8EC] hover:border-[#23262F] dark:border-[#777E90] dark:hover:border-[#FCFCFD] hover:bg-[#23262F] dark:hover:bg-[#FCFCFD] rounded-full disabled:cursor-not-allowed disabled:bg-[#6A6D79] dark:disabled:bg-[#D7D9E0];
 }
+
+/* Checkbox Custom Icon */
+
+input:checked + div {
+  @apply border-blue-500;
+}
+input:checked + div svg {
+  @apply block;
+}
+
+/* [type="checkbox"]:checked {
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 12L10 16L18 8" stroke="#FCFCFD" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+} */

@@ -6,6 +6,7 @@ import { Button } from "../components/Button/Button";
 import Icon from "../components/Icon/Icon";
 import ArrowLeft from "../components/Icon/ArrowLeft";
 import ArrowRight from "../components/Icon/ArrowRight";
+import { Checkbox } from "../components/Checkbox/Checkbox";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function Home() {
       <br />
       <ArrowLeft />
       <ArrowRight />
+      <Checkbox label="Value" />
     </>
   );
 }
