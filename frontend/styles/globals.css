@@ -30,11 +30,21 @@
   @apply text-[#23262F] dark:text-[#777E90] hover:text-[#FCFCFD] dark:hover:text-[#23262F] disabled:text-[#D7D9E0] dark:disabled:text-[#6A6D79] text-sm text-center font-bold bg-transparent border-2 border-[#E6E8EC] hover:border-[#23262F] dark:border-[#777E90] dark:hover:border-[#FCFCFD] hover:bg-[#23262F] dark:hover:bg-[#FCFCFD] rounded-full disabled:cursor-not-allowed disabled:bg-[#6A6D79] dark:disabled:bg-[#D7D9E0];
 }
 
-/* Checkbox Custom Icon */
+/* Custom Checkbox */
 
-input:checked + div {
+[type="checkbox"]:checked + div {
   @apply bg-[#3b71fe] rounded;
 }
-input:checked + div svg {
+
+[type="checkbox"]:checked + div svg {
+  @apply block;
+}
+
+/* Custom Radio */
+[type="radio"]:checked + div {
+  @apply bg-[#FCFCFD] rounded-full;
+}
+
+[type="radio"]:checked + div svg {
   @apply block;
 }
