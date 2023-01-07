@@ -25,7 +25,14 @@ export const RadioButton: React.FC<RadioButtonProps> = ({ label }) => {
           xmlns="http://www.w3.org/2000/svg"
           className="hidden"
         >
-          <rect x="1" y="1" width="22" height="22" rx="11" fill="#FCFCFD" />
+          <rect
+            x="1"
+            y="1"
+            width="22"
+            height="22"
+            rx="11"
+            className="fill-[#FCFCFD] dark:fill-[#23262f]"
+          />
           <rect x="6" y="6" width="12" height="12" rx="6" fill="#3B71FE" />
           <rect
             x="1"

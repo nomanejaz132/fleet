@@ -41,9 +41,6 @@
 }
 
 /* Custom Radio */
-[type="radio"]:checked + div {
-  @apply bg-[#FCFCFD] rounded-full;
-}
 
 [type="radio"]:checked + div svg {
   @apply block;
